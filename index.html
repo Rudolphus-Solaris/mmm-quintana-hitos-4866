@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quintana Propiedades — Hitos de trabajo</title>
+<title>Quintana Propiedades — Entregables</title>
 <style>
   :root{
     --bg:#0E0E12; --bg-card:#1C1C23;
@@ -17,42 +17,28 @@
   }
   *{box-sizing:border-box;}
   body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;}
-  .wrap{max-width:760px;margin:0 auto;padding:0 24px 70px;}
+  .wrap{max-width:640px;margin:0 auto;padding:0 24px 60px;}
 
-  .brandbar{display:flex;align-items:center;justify-content:space-between;padding:26px 0 20px;}
+  .brandbar{display:flex;align-items:center;justify-content:space-between;padding:26px 0 30px;}
   .brandbar img{height:24px;opacity:.85;}
   .brandbar .tag{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);}
 
-  h1{font-family:var(--serif);font-weight:300;font-size:clamp(26px,5vw,38px);margin:10px 0 8px;line-height:1.2;}
-  .sub{color:var(--ink-soft);font-size:15px;margin:0 0 30px;}
+  .intro{font-size:16px;color:var(--ink-soft);margin:0 0 6px;}
+  .intro b{color:var(--ink);}
+  h1{font-family:var(--serif);font-weight:300;font-size:clamp(22px,4.5vw,28px);margin:2px 0 26px;color:var(--ink);}
 
-  .foundation{background:var(--bg-card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:28px;}
-  .foundation .k{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
-  .foundation ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink-soft);}
-  .foundation li{margin-bottom:4px;}
-
-  .hito{display:flex;gap:16px;padding:20px 0;border-top:1px solid var(--line);}
-  .hito:last-of-type{border-bottom:1px solid var(--line);}
-  .hnum{font-family:var(--serif);font-size:26px;color:var(--gold-dim);flex-shrink:0;width:34px;}
-  .hbody{flex:1;min-width:0;}
-  .htop{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
-  .hbody h3{font-family:var(--serif);font-weight:400;font-size:19px;margin:0;color:var(--ink);}
-  .status{font-size:9.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 10px;border-radius:99px;}
+  .entregable{display:flex;gap:14px;align-items:baseline;padding:14px 0;border-top:1px solid var(--line);}
+  .entregable:last-of-type{border-bottom:1px solid var(--line);}
+  .enum{font-family:var(--serif);font-size:20px;color:var(--gold-dim);flex-shrink:0;width:24px;}
+  .etxt{flex:1;font-size:15px;color:var(--ink-soft);}
+  .etxt b{color:var(--ink);}
+  .status{display:inline-block;margin-left:8px;font-size:9px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:99px;white-space:nowrap;}
   .status.ready{background:var(--good-bg);color:var(--good);}
   .status.blocked{background:var(--flag-bg);color:var(--flag);}
-  .hbody ul{margin:8px 0 0;padding-left:18px;font-size:14px;color:var(--ink-soft);}
-  .hbody li{margin-bottom:3px;}
 
-  .crm{margin-top:26px;background:var(--bg-card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-size:13.5px;color:var(--ink-soft);}
-  .crm b{color:var(--ink);}
+  .crm{margin-top:22px;font-size:13.5px;color:var(--ink-mute);font-style:italic;}
 
-  footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);font-size:11px;color:var(--ink-mute);}
-
-  @media (max-width:560px){
-    .hito{gap:12px;}
-    .hnum{font-size:20px;width:26px;}
-    .hbody h3{font-size:17px;}
-  }
+  footer{margin-top:32px;padding-top:16px;border-top:1px solid var(--line);font-size:11px;color:var(--ink-mute);}
 </style>
 </head>
 <body>
@@ -62,81 +48,30 @@
     <div class="tag">Maximus Marketing Machine</div>
   </div>
 
-  <h1>Lo que sigue, un hito a la vez</h1>
-  <p class="sub">Ya construimos la base, sin costo. Desde acá, cada hito es un paso independiente.</p>
+  <p class="intro">Óscar, hasta ahora hemos hecho <b>exploración</b> — diagnóstico, auditorías, prototipos.</p>
+  <h1>Los siguientes entregables son:</h1>
 
-  <div class="foundation">
-    <div class="k">Ya tienes, sin costo</div>
-    <ul>
-      <li>Diagnóstico completo del negocio</li>
-      <li>Auditoría del sitio y de un competidor</li>
-      <li>Auditoría de cómo te encuentra la IA</li>
-      <li>Dos prototipos de sitio web, listos para revisar</li>
-    </ul>
+  <div class="entregable">
+    <div class="enum">01</div>
+    <div class="etxt"><b>Website</b> ajustada a tus necesidades y mostrando credibilidad — equipo real, tu trayectoria, y espacio para que tus clientes dejen su testimonio real.<span class="status ready">Falta marca + fotos</span></div>
   </div>
 
-  <div class="hito">
-    <div class="hnum">01</div>
-    <div class="hbody">
-      <div class="htop"><h3>Estrategia con números reales</h3><span class="status blocked">Esperando tu formulario</span></div>
-      <ul>
-        <li>Plan de 90 días, por escrito</li>
-        <li>Qué canal priorizar primero</li>
-        <li>Metas mensuales claras</li>
-      </ul>
-    </div>
+  <div class="entregable">
+    <div class="enum">02</div>
+    <div class="etxt"><b>Presencia digital ordenada</b> — Google Business activo, redes propias, y tu información consistente en todos lados.<span class="status blocked">Esperando tu formulario</span></div>
   </div>
 
-  <div class="hito">
-    <div class="hnum">02</div>
-    <div class="hbody">
-      <div class="htop"><h3>Arreglar el sitio actual</h3><span class="status ready">Listo para ejecutar</span></div>
-      <ul>
-        <li>Texto, teléfono y datos corregidos</li>
-        <li>Perfiles reales de Oscar, Rafael y Patricia</li>
-        <li>Primeros testimonios publicados</li>
-      </ul>
-    </div>
+  <div class="entregable">
+    <div class="enum">03</div>
+    <div class="etxt"><b>Estrategia con datos reales</b> — plan de 90 días con tus respuestas ya incorporadas.<span class="status blocked">Esperando tu formulario</span></div>
   </div>
 
-  <div class="hito">
-    <div class="hnum">03</div>
-    <div class="hbody">
-      <div class="htop"><h3>Sitio nuevo, publicado</h3><span class="status ready">Falta marca + fotos</span></div>
-      <ul>
-        <li>Elegir Quintana o QuintHard</li>
-        <li>Fotos reales, propiedades reales</li>
-        <li>Sitio en producción, con dominio propio</li>
-      </ul>
-    </div>
+  <div class="entregable">
+    <div class="enum">04</div>
+    <div class="etxt"><b>Sistema de referidos</b> — diseñado con tu comisión y ticket promedio reales.<span class="status blocked">Esperando tu formulario</span></div>
   </div>
 
-  <div class="hito">
-    <div class="hnum">04</div>
-    <div class="hbody">
-      <div class="htop"><h3>Una sola identidad, en todos lados</h3><span class="status blocked">Esperando confirmar hallazgos</span></div>
-      <ul>
-        <li>Google Business activo</li>
-        <li>Redes propias, sin confusión de nombre</li>
-        <li>Perfiles existentes (Urbania, YouTube) ordenados</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="hito">
-    <div class="hnum">05</div>
-    <div class="hbody">
-      <div class="htop"><h3>Sistema de referidos</h3><span class="status blocked">Esperando la economía del negocio</span></div>
-      <ul>
-        <li>Bono de referido diseñado con números reales</li>
-        <li>Revisión mensual de qué canal funciona</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="crm">
-    <b>En paralelo:</b> Daniel está construyendo el CRM — modular, ajustable y eficiente. Ningún contacto se pierde, y todo el equipo ve en qué etapa está cada propietario o comprador.
-  </div>
+  <div class="crm">En paralelo, Daniel está construyendo tu CRM.</div>
 
   <footer>Maximus Marketing Machine de Datia — 22 de julio, 2026</footer>
 </div>
